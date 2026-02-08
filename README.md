@@ -1,7 +1,7 @@
 <div align="center">
   <h1>🎵 Spotify Player Clone</h1>
   <p>Experience the vibe of music — modern, smooth, and interactive 🎧</p>
-  <a href="https://honestdev125.github.io/Music-Player/">
+  <a href="https://alpinist-dev.github.io/Music-Player/">
     <img src="https://img.shields.io/badge/View_Live_Project-1DB954?style=for-the-badge&logo=spotify&logoColor=white"/>
   </a>
 </div>
@@ -76,7 +76,7 @@ Perfect for developers practicing **React**, **Next.js**, **TypeScript**, and **
 
 ## 👨‍💻 Author
 
-**Developed by:** [Niku Namada](https://github.com/honestdev125)  
+**Developed by:** [Alpinist](https://github.com/alpinist-dev)  
 💬 Front-End Developer | Passionate about music, motion, and modern design  
 
 ---
