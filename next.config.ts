@@ -1,11 +1,23 @@
 import type { NextConfig } from "next";
 
-const isProd = process.env.NODE_ENV === "production";
+const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig: NextConfig = {
-  output: "export", // important for exporting to static HTML
-  basePath: isProd ? "/Music-Player" : "", // GitHub repo name in production
-  assetPrefix: isProd ? "/Music-Player/" : "", // prefix for static files in production
+  // 1. Enable static export (required for GitHub Pages)
+  output: 'export', 
+
+  // 2. Set the sub-path for GitHub Pages (e.g., /my-repo/)
+  // If using a custom domain, set this to an empty string ''
+  basePath: isProd ? '/Music-Player/' : '',
+
+  // 3. Ensure assets like CSS/JS use the correct path
+  assetPrefix: isProd ? '/Music-Player/' : '',
+
+  reactStrictMode: true,
+  trailingSlash: true, // Recommended for static hosting
+  images: {
+    unoptimized: true, // Required: GitHub Pages doesn't support Next.js image optimization
+  },
 };
 
 export default nextConfig;
